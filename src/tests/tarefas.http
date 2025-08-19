@@ -1,0 +1,23 @@
+@url = https://8080-lucaspcode-primeiraapi2-xqhvik1rh5a.ws-us121.gitpod.io/tarefas
+
+POST {{url}}
+Content-Type: application/json
+
+{
+    "id": 2,
+    "descricao": "Novo Teste"
+}
+
+###
+GET {{url}}
+
+###
+PUT {{url}}/4
+Content-Type: application/json
+
+{
+    "descricao": "Teste Alterado"
+}
+
+###
+DELETE {{url}}
