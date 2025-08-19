@@ -1,22 +1,23 @@
-@url = https://8080-lucaspcode-primeiraapi2-xqhvik1rh5a.ws-us121.gitpod.io/tarefas
+@url = https://8080-lucaspcode-primeiraapi2-xqhvik1rh5a.ws-us121.gitpod.io/alunos
 
 POST {{url}}
 Content-Type: application/json
 
 {
     "id": 2,
-    "descricao": "Novo Teste"
+    "nome": "Ana",
+    "idade": 19
 }
 
 ###
 GET {{url}}
 
 ###
-PUT {{url}}/4
+PUT {{url}}/2
 Content-Type: application/json
 
 {
-    "descricao": "Teste Alterado"
+    "nome": "Ademar"
 }
 
 ###
