@@ -47,7 +47,7 @@ public class AlunoController {
     }
 
     @PutMapping("/{id}")
-    public Aluno update(@PathVariable long id, @RequestBody Aluno novosDados) {
+    public Aluno update(@PathVariable long id, @RequestBody Aluno dadosAluno) {
         Optional<Aluno> resultado = alunoRepo.findById(id);
 
         if (resultado.isEmpty()){
@@ -56,7 +56,8 @@ public class AlunoController {
             );
         }
 
-        resultado.get().setNome(novosDados.getNome());
+        resultado.get().setNome(dadosAluno.getNome());
+        resultado.get().setIdade(dadosAluno.getIdade());
         return alunoRepo.save(resultado.get());
     }
 
