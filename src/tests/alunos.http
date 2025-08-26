@@ -4,8 +4,8 @@ POST {{url}}
 Content-Type: application/json
 
 {
-    "nome": "Carlos",
-    "idade": 21
+    "nome": "Paula",
+    "idade": 36
 }
 
 ###
@@ -16,8 +16,8 @@ PUT {{url}}/4
 Content-Type: application/json
 
 {
-    "nome": "Ademar",
-    "idade": 40
+    "nome": "Jurandir",
+    "idade": 89
 }
 
 ###
